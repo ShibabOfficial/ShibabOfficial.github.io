@@ -37,10 +37,40 @@ body {
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
+    flex-direction: column;
     transform: translateY(30vh);
-    text-decoration:underline ;
 }
+
+/*<---IMG--->*/
+
+.image {
+    max-width: 250px;
+    max-height: 250px;
+
+    margin: 20px;
+}
+
+.x-image {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.xx-image {
+    max-width: 400px;
+    max-height: 400px;
+
+    margin: 20px;
+}
+
+.xxx-image {
+    max-width: 500px;
+    max-height: 500px;
+
+    margin: 20px;
+}
+
 
 /*<---TEXT--->*/
 
