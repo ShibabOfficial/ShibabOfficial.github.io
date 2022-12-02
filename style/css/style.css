@@ -145,6 +145,7 @@ body {
 
 .sectionNavL {
     display: flex;
+    flex-direction: row;
     margin: 5px;
     align-items: center;
 }
@@ -236,5 +237,9 @@ body {
 
     .text-large-xx {
         font-size: xx-large;
+    }
+
+    .sectionNavL {
+        flex-direction: column;
     }
 }
