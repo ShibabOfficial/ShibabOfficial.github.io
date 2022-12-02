@@ -136,7 +136,8 @@ body {
     margin-bottom: 20px;
     padding: 5px;
     background-color: var(--bacground-nav-c);
-    min-height: 88px;
+    min-height: 24px;
+    max-height: 500px;
     justify-content: center;
     align-items: center;
     justify-content: space-around;
@@ -146,6 +147,11 @@ body {
     display: flex;
     margin: 5px;
     align-items: center;
+}
+
+.sectionNavL-b {
+    display: flex;
+    flex-direction: row;
 }
 
 .sectionNav {
@@ -222,5 +228,13 @@ body {
 
     .header {
         max-width: 375px;
+    }
+
+    .sectionNavL-b {
+        flex-direction: column;
+    }
+
+    .text-large-xx {
+        font-size: xx-large;
     }
 }
