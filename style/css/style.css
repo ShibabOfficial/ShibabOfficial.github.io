@@ -18,6 +18,33 @@
     --background-button-mode-i: url('/style/images/DarkMode.png');
 }
 
+/*<--- MEDIA --->*/
+
+@media only screen and (max-width: 700px) {
+    .sectionNavL {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        justify-content: center;
+    }
+
+    .header {
+        max-width: 375px;
+    }
+
+    .sectionNavL-b {
+        flex-direction: column;
+    }
+
+    .text-large-xx {
+        font-size: xx-large;
+    }
+
+    .sectionNavL {
+        flex-direction: column;
+    }
+}
+
 /*<--- BODY --->*/
 
 body {
@@ -103,30 +130,23 @@ body {
 /*<--- TEXT LINK --->*/
 
 .text-link-none {
+    box-shadow: inset 0 0 0 0 #666666;
+    color: var(--text-c);
     margin: 8px;
-    padding-bottom: 2px;
-    position: relative;
+    padding: 0 .25rem;
 }
 
 .text-link {
+    box-shadow: inset 0 0 0 0 #666666;
+    color: var(--text-c);
     margin: 8px;
-    padding-bottom: 2px;
-    position: relative;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-.text-link::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: rgb(41, 224, 248);
-    transition: width 262ms ease-out;
-}
-
-.text-link:hover::before {
-    width: 100%;
+.text-link:hover {
+    box-shadow: inset 100px 0 0 0 #666666;
+    color: var(--background-c);
 }
 
 /*<--- NAV --->*/
@@ -215,31 +235,4 @@ body {
 .button-change-ld:hover {
     cursor: pointer;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-
-/*<--- MEDIA --->*/
-
-@media only screen and (max-width: 700px) {
-    .sectionNavL {
-        display: flex;
-        flex-direction: column;
-        margin: 5px;
-        justify-content: center;
-    }
-
-    .header {
-        max-width: 375px;
-    }
-
-    .sectionNavL-b {
-        flex-direction: column;
-    }
-
-    .text-large-xx {
-        font-size: xx-large;
-    }
-
-    .sectionNavL {
-        flex-direction: column;
-    }
 }
