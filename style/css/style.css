@@ -18,33 +18,6 @@
     --background-button-mode-i: url('/style/images/DarkMode.png');
 }
 
-/*<--- MEDIA --->*/
-
-@media only screen and (max-width: 700px) {
-    .sectionNavL {
-        display: flex;
-        flex-direction: column;
-        margin: 5px;
-        justify-content: center;
-    }
-
-    .header {
-        max-width: 375px;
-    }
-
-    .sectionNavL-b {
-        flex-direction: column;
-    }
-
-    .text-large-xx {
-        font-size: xx-large;
-    }
-
-    .sectionNavL {
-        flex-direction: column;
-    }
-}
-
 /*<--- BODY --->*/
 
 body {
@@ -235,4 +208,31 @@ body {
 .button-change-ld:hover {
     cursor: pointer;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/*<--- MEDIA --->*/
+
+@media only screen and (max-width: 700px) {
+    .sectionNavL {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        justify-content: center;
+    }
+
+    .header {
+        max-width: 375px;
+    }
+
+    .sectionNavL-b {
+        flex-direction: column;
+    }
+
+    .text-large-xx {
+        font-size: xx-large;
+    }
+
+    .sectionNavL {
+        flex-direction: column;
+    }
 }
